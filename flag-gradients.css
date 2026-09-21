@@ -1,0 +1,112 @@
+.parent{
+    position:absolute;
+    left: 200px;
+    top:50px;
+}
+
+.trio{
+    height: 200px;
+    width: 300px;
+    background-image: linear-gradient(
+        to bottom,
+        orange 0%,
+        orange 33%,
+        white 33%,
+        white 66%,
+        green 66%,
+        green 100%
+    );
+}
+
+.chakra{
+    height: 65px;
+    width: 65px;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    top : 66px;
+    left : 120px;
+    
+}
+
+.line {
+    height: 60px;
+    width: 2px;
+    background-color: navy;
+    position: absolute;
+    left: 30px;
+    top: 2px;
+    transform-origin: center;
+}
+
+
+.line1 {
+    transform: rotate(0deg);
+}
+
+.line2 {
+    transform: rotate(30deg);
+}
+
+.line3 {
+    transform: rotate(60deg);
+}
+
+.line4 {
+    transform: rotate(90deg);
+}
+
+.line5 {
+    transform: rotate(120deg);
+}
+
+.line6 {
+    transform: rotate(150deg);
+}
+
+.stick{
+    height:500px;
+    width:10px;
+    border:2px solid black;
+    position:absolute;
+    left: -11px;
+    top:-7px;
+    background-color: black;
+}
+.steps{
+    height:40px;
+    width:70px;
+    border:2px solid black;
+    position:relative;
+    top: 290px;
+    left: -40px;
+}
+
+.step1{
+    background-color: orange;
+    width: 100px;
+    left: -50px;
+}
+
+.step2{
+    width: 150px;
+    left: -75px;
+}
+
+.step3{
+    background-color: green;
+    width: 200px;
+    left: -100px;
+}
+
+label{
+    font-size: 30px;
+}
+
+.parent{
+    display: none;
+}
+
+input:checked+.parent{
+    display: block;
+}
