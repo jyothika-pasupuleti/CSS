@@ -1,0 +1,135 @@
+.parent{
+    position: absolute;
+    left: 400px;
+    top : 100px;
+}
+.child1,
+.child2,
+.child3,
+.child4,
+.child5{
+    height: 120px;
+    width: 120px;
+    border: 0px solid rgb(58, 60, 61);
+    box-shadow: 10px 10px 20px gray;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 50px;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.child4{
+height: 140px;
+width: 140px;
+}
+
+.parent img{
+    background-size: cover;
+    transform: rotate(-45deg);
+    height: 100%;
+    width: 100%;
+}
+
+.child1{
+    left : 100px;  
+}
+
+.child2{
+    left : 300px;
+}
+
+.child3{
+    top: 300px;
+    left : 100px;
+}
+
+.child4{
+    left : 190px;
+    top : 165px
+    
+}
+.child5{
+    left : 300px;
+    top : 300px;
+}
+
+.child1:hover,
+.child2:hover,
+.child3:hover,
+.child4:hover,
+.child5:hover
+{
+    transform : scale(1.1) rotate(45deg);
+    transition-duration: 2s;
+    transition-delay: 200ms;
+}
+
+.child1{
+    animation-name: fromleft;
+    animation-duration: 5s;
+}
+@keyframes fromleft {
+    from{
+        transform: translateX(-100px) rotate(45deg);
+    }
+    to{
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+
+.child2{
+    animation-name: fromtop;
+    animation-duration: 5s;
+}
+
+@keyframes fromtop {
+    from{
+        transform: translateY(-100px) rotate(45deg);
+    }
+    to{
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+
+.child3{
+    animation-name : frombottom;
+    animation-duration: 5s;
+}
+
+@keyframes frombottom {
+    from{
+        transform: translateY(100px) rotate(45deg);
+    }
+    to{
+        transform: translateY(0px) rotate(45deg);
+    }
+}
+
+.child4{
+    animation-name : middle-rotate;
+    animation-duration: 6s;
+}
+
+@keyframes middle-rotate {
+    from{
+        transform: rotate(-360deg) rotate(45deg);
+    }
+    to{
+        transform: translateY(0deg) rotate(45deg);
+    }
+}
+
+.child5{
+    animation-name : fromright;
+    animation-duration: 5s;
+}
+
+@keyframes fromright {
+    from{
+        transform: translateX(100px) rotate(45deg);
+    }
+    to{
+        transform: translateX(0px) rotate(45deg);
+    }
+}
