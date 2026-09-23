@@ -1,0 +1,69 @@
+.parent {
+    height: 100vh;
+    width: 100vw;
+}
+
+nav {
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+}
+
+.child {
+    display: flex;
+    gap: 20px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+ 
+#menu {
+    display: none;
+}
+
+.hamburger {
+    display: none;
+}
+
+
+
+@media screen and (max-width: 767px) {
+
+    .child {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+        width: 40px;
+        cursor: pointer;
+    }
+
+    .hamburger div {
+        height: 3px;
+        width: 50px;
+        background-color: black;
+        margin: 5px 0;
+    }
+
+    
+    #menu:checked ~ .child {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 20px;
+        justify-content: center;
+        transform: none;
+        gap: 15px;
+    }
+}
